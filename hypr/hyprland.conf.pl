@@ -1,0 +1,16 @@
+# Import configuration files
+
+debug.disable_logs = false
+source = ~/.config/hypr/conf/monitor.conf
+source = ~/.config/hypr/conf/autostart.conf
+#source = ~/.config/hypr/conf/environments.conf
+source = ~/.config/hypr/conf/input.conf
+source = ~/.config/hypr/conf/general.conf
+source = ~/.config/hypr/conf/decorations.conf
+source = ~/.config/hypr/conf/animations.conf
+source = ~/.config/hypr/conf/layouts.conf
+source = ~/.config/hypr/conf/gestures.conf
+source = ~/.config/hypr/conf/misc.conf
+source = ~/.config/hypr/conf/windowrules.conf
+source = ~/.config/hypr/conf/binds.conf
+

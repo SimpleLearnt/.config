@@ -1,0 +1,12 @@
+# ignore everything in ~/.config
+/*
+
+# keep git metadata
+!.gitignore
+!.gitattributes
+
+# folders you choose to sync
+!nvim/
+!hypr/
+!kitty/
+!starship/

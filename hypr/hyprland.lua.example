@@ -1,0 +1,24 @@
+-- =============================================================================
+-- Hyprland Lua entrypoint EXAMPLE (modular — mirrors conf/*.conf layout)
+-- =============================================================================
+-- Activate by ensuring this content is in hyprland.lua (already done if you
+-- followed the modular split). Legacy conf/*.conf files stay as backup.
+--
+-- Load order matches hyprland.conf.pl.
+-- =============================================================================
+
+local hypr = (os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")) .. "/hypr"
+package.path = hypr .. "/?.lua;" .. hypr .. "/?/init.lua;" .. package.path
+
+require "conf.monitor"
+require "conf.autostart"
+require "conf.environments"
+require "conf.input"
+require "conf.general"
+require "conf.decorations"
+require "conf.animations"
+require "conf.layouts"
+require "conf.gestures"
+require "conf.misc"
+require "conf.windowrules"
+require "conf.binds"
